@@ -1,9 +1,12 @@
 # Project Name: Extracting Flood_Event Feature 
-This project will result in dataset features, like flooding, which is one of the strongest real-world predictors of water contamination. These can be used for training a predictive model to estimate water safety based on historical data.
+This web scraper will produce dataset features, like flooding, which is one of the strongest real-world predictors of water contamination. These can be used for training predictive models to estimate water safety based on historical data.
 ### 1. Project Overview
 * **Target Websites:** 
   * https://reliefweb.int/country/pak#disasters
-* **Data Fields Extracted:** Text, Flag
+  * https://www.ndma.gov.pk/
+* **Data Fields Extracted:** 
+  * Text, Flag
+  * region, date, rainfall_mm, flood_event, infrastructure_score
 * **Tools Used:** Python, BeautifulSoup, Pandas
 ### 2. Setup Instructions
 1. Clone this repo: `git clone https://github.com/Nefertiti23/DS-assignment2.git`
