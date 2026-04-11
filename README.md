@@ -1,4 +1,5 @@
-# Project Name: [Your Project Title]
+# Project Name: Extracting Flood_Event Feature 
+This project will result in dataset features, like flooding, which is one of the strongest real-world predictors of water contamination. These can be used for training a predictive model to estimate water safety based on historical data.
 ### 1. Project Overview
 * **Target Websites:** 
   * https://reliefweb.int/country/pak#disasters
