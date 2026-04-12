@@ -14,7 +14,7 @@ html_content = ''
 records = []
 keywords = {"rainfall", "rains", "rain", "flood", "floods",
     "thunderstorm", "thunderstorms", "landslide", "landslides",
-    "hailstorm", "hailstorms", "alert", "alerts"}
+    "hailstorm", "hailstorms", "alert", "alerts", "glof"}
 
 try:
     # send a GET request to the URL
