@@ -1,19 +1,18 @@
-# Project Name: Extracting Flood_Event Feature 
-This web scraper will produce dataset features, like flooding, which is one of the strongest real-world predictors of water contamination. These can be used for training predictive models to estimate water safety based on historical data.
+# Project Name: Detective Fiction Books in Public Domain 
+This web scraper will scrape Project Gutenberg's website and produce a dataset of all the books under the detective fiction genre.
 ### 1. Project Overview
-* **Target Websites:** 
-  * https://reliefweb.int/country/pak#disasters
-  * https://www.ndma.gov.pk/
+* **Target Website:** 
+  * https://www.gutenberg.org/ebooks/bookshelf/30?start_index=
 * **Data Fields Extracted:** 
-  * Text, Flag
-  * region, date, rainfall_mm, flood_event, infrastructure_score
-* **Tools Used:** Python, BeautifulSoup, Pandas
+  * Text, Text, Number, Text, Text
+  * author, title, total downloads, language, file_type
+* **Tools Used:** Python, BeautifulSoup
 ### 2. Setup Instructions
-1. Clone this repo: `git clone https://github.com/Nefertiti23/DS-assignment2.git`
+1. Clone this repo: `https://github.com/Nefertiti23/WebScraping-DS.git`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run script: `python scraper.py`
 ### 3. Challenges & Solutions
 * Describe one technical hurdle you overcame (e.g., how you located a specific HTML element or handled
 pagination).
-* Located `<p></p>` tags to find text in the page.
-* Overcame the possibility of storing entire paragraphs for textual data by splitting paragraphs into sentences and then storing those sentences for documenting.
+* Where available data was textual (eg. '6506 downloads') and required data was integer (eg 6505), separated the digits from textual data and stored them as an integer value in the records.
+* From multiple rows in the book details' table, extracyed specific rows only (where `th` = 'language') from a table of variable length for every book by locating the row for which `th` = 'language' and `th` = 'category' were true.
